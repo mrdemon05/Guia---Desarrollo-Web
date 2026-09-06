@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 30px;
+    background-color: #080808;
+    background-image: url(fondo_grimorio.png);
+    color: #f2f2f2;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+
+/* Logo */
+
+body > img {
+    width: 600px;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+
+/* Descripcion */
+
+.descripcion {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 20px 25px;
+    text-align: justify;
+    line-height: 1.7;
+    background-color: #151515;
+    border-left: 5px solid #8b1e1e;
+    border-radius: 8px;
+}
+
+
+/* titulo de los personajes */
+
+.personajes {
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+
+/* Tabla de los personajes*/
+
+.character-table {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    border-collapse: collapse;
+    background-color: #151515;
+}
+
+
+/* Encabezados */
+
+.character-table th {
+    background-color: #242424;
+    color: #ffffff;
+    padding: 10px;
+    border: 2px solid #8b1e1e;
+}
+
+
+/* Celdas */
+
+.character-table td {
+    padding: 8px;
+    text-align: center;
+    border: 2px solid #444444;
+}
+
+
+/* Imágenes de los personajes */
+
+.character-table img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+/* Efecto al pasar el mouse */
+
+.character-table tr:hover {
+    background-color: #242424;
+}
+
+
+/* tabla de desarrollo de la serie */
+
+.desarrollo {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 25px;
+    background-color: #151515;
+    border-top: 4px solid #ffffff;
+    border-bottom: 4px solid #8b1e1e;
+}
+
+
+.desarrollo h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.desarrollo p {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+
+/* Enlace para ver la serie */
+
+.ver-serie {
+    text-align: center;
+    margin: 40px 0;
+}
+
+
+.ver-serie a {
+    padding: 15px 25px;
+    background-color: #8b1e1e;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+
+/* Efecto del botón */
+
+.ver-serie a:hover {
+    background-color: #ffffff;
+    color: #080808;
+}
