@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es-SV">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Domino's Pizza El Salvador | Pide en línea</title>
+<meta name="description" content="Rediseño de Domino's Pizza El Salvador — pide en línea, encuentra promociones y descubre el menú completo.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+
+    <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a href="#inicio" class="navbar__logo" aria-label="Domino's Pizza — Inicio">
+      <span class="navbar__logo-mark">
+        <span class="navbar__logo-dot navbar__logo-dot--1"></span>
+        <span class="navbar__logo-dot navbar__logo-dot--2"></span>
+      </span>
+      <span class="navbar__logo-text">domino's</span>
+    </a>
+
+    <nav class="navbar__nav" id="navMenu" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#promociones">Promociones</a>
+      <a href="#menu">Menú</a>
+      <a href="#ubicaciones">Ubicaciones</a>
+      <a href="#app">App</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <a href="#" class="navbar__login">Iniciar sesión</a>
+      <a href="#menu" class="navbar__cart" aria-label="Ver pedido">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="navbar__cart-count">0</span>
+      </a>
+    </div>
+
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero__type" aria-hidden="true">PIZZA</div>
+
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="hero__kicker">Recién horneada, siempre a tiempo</p>
+        <h1 class="hero__title">Tu antojo llega<br>en <span>30 minutos</span><br>o menos</h1>
+        <p class="hero__desc">Masa fresca, ingredientes reales y el sabor de Domino's que ya conoces — ahora pedir es todavía más fácil.</p>
+        <div class="hero__actions">
+          <a href="#menu" class="btn btn--primary">Ordenar ahora</a>
+          <a href="#promociones" class="btn btn--outline">Ver promociones</a>
+        </div>
+      </div>
+
+      <div class="hero__media">
+        <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?auto=format&fit=crop&w=900&q=80" alt="Pizza de pepperoni recién horneada con queso derretido" class="hero__img">
+        <div class="hero__badge">
+          <strong>4.8</strong>
+          <span>calificación de pedidos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ORDER / CÓMO QUIERES TU PEDIDO ============ -->
+  <section class="order" aria-labelledby="order-title">
+    <div class="container">
+      <h2 id="order-title" class="section-title">¿Cómo quieres tu pizza hoy?</h2>
+      <div class="order__grid">
+
+        <article class="order-card">
+          <div class="order-card__icon" aria-hidden="true">🚗</div>
+          <h3>Entrega a domicilio</h3>
+          <p>Recibe tu pedido directo en la puerta de tu casa, caliente y a tiempo.</p>
+          <a href="#menu" class="order-card__link">Pedir delivery →</a>
+        </article>
+
+        <article class="order-card order-card--accent">
+          <div class="order-card__icon" aria-hidden="true">🏪</div>
+          <h3>Recoger en tienda</h3>
+          <p>Ordena en línea y pasa a recogerlo cuando esté listo, sin filas.</p>
+          <a href="#ubicaciones" class="order-card__link">Buscar tienda →</a>
+        </article>
+
+        <article class="order-card">
+          <div class="order-card__icon" aria-hidden="true">🍕</div>
+          <h3>Comer en restaurante</h3>
+          <p>Visita uno de nuestros locales y disfruta tu pizza recién salida del horno.</p>
+          <a href="#ubicaciones" class="order-card__link">Ver ubicaciones →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROMOCIONES ============ -->
+  <section class="promotions" id="promociones" aria-labelledby="promo-title">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="section-eyebrow">Ofertas de la semana</p>
+          <h2 id="promo-title" class="section-title section-title--light">Promociones pensadas para compartir</h2>
+        </div>
+      </div>
+
+      <div class="promo-grid">
+
+        <article class="promo-card promo-card--large">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Dos pizzas medianas listas para compartir">
+          <div class="promo-card__body">
+            <span class="promo-tag">Más popular</span>
+            <h3>2 pizzas medianas</h3>
+            <p>Elige entre nuestras variedades clásicas y arma tu combo ideal.</p>
+            <div class="promo-card__footer">
+              <span class="promo-price">Desde <strong>$X.XX</strong></span>
+              <a href="#menu" class="btn btn--small btn--primary">Ver oferta</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="promo-card">
+          <img src="https://images.unsplash.com/photo-1620374643809-dbb70a3c0d5f?auto=format&fit=crop&w=700&q=80" alt="Combo familiar con pizza, pan de ajo y bebida">
+          <div class="promo-card__body">
+            <span class="promo-tag promo-tag--blue">Para la familia</span>
+            <h3>Combo familiar</h3>
+            <p>Pizza grande, complemento y bebida de 1.5L.</p>
+            <div class="promo-card__footer">
+              <span class="promo-price">Consultar precio</span>
+              <a href="#menu" class="btn btn--small btn--outline-dark">Ver oferta</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="promo-card">
+          <img src="https://images.unsplash.com/photo-1593504049359-74330189a345?auto=format&fit=crop&w=700&q=80" alt="Pizza acompañada de alitas de pollo">
+          <div class="promo-card__body">
+            <span class="promo-tag promo-tag--blue">Combo</span>
+            <h3>Pizza + complemento</h3>
+            <p>Tu pizza favorita acompañada de alitas o pan de ajo.</p>
+            <div class="promo-card__footer">
+              <span class="promo-price">Desde <strong>$X.XX</strong></span>
+              <a href="#menu" class="btn btn--small btn--outline-dark">Ver oferta</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENÚ ============ -->
+  <section class="menu" id="menu" aria-labelledby="menu-title">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="section-eyebrow">Nuestro menú</p>
+          <h2 id="menu-title" class="section-title">Elige, personaliza y disfruta</h2>
+        </div>
+      </div>
+
+      <div class="menu__categories" role="tablist" aria-label="Categorías del menú">
+        <button class="menu__cat is-active" role="tab" aria-selected="true">🍕 Pizzas</button>
+        <button class="menu__cat" role="tab" aria-selected="false">🍗 Pollo</button>
+        <button class="menu__cat" role="tab" aria-selected="false">🥖 Entradas</button>
+        <button class="menu__cat" role="tab" aria-selected="false">🍝 Pasta</button>
+        <button class="menu__cat" role="tab" aria-selected="false">🥤 Bebidas</button>
+        <button class="menu__cat" role="tab" aria-selected="false">🍰 Postres</button>
+      </div>
+
+      <div class="menu__grid">
+
+        <article class="product-card">
+          <button class="product-card__fav" aria-label="Agregar a favoritos">♥</button>
+          <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=500&q=80" alt="Pizza Pepperoni">
+          <div class="product-card__body">
+            <h3>Pizza Pepperoni</h3>
+            <p>Pepperoni, queso mozzarella y salsa de tomate.</p>
+            <div class="product-card__footer">
+              <span class="product-price">Desde $X.XX</span>
+              <button class="product-add" aria-label="Agregar Pizza Pepperoni">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <button class="product-card__fav" aria-label="Agregar a favoritos">♥</button>
+          <img src="https://images.unsplash.com/photo-1548369937-47519962c11a?auto=format&fit=crop&w=500&q=80" alt="Pizza Hawaiana">
+          <div class="product-card__body">
+            <h3>Pizza Hawaiana</h3>
+            <p>Jamón, piña y queso mozzarella derretido.</p>
+            <div class="product-card__footer">
+              <span class="product-price">Desde $X.XX</span>
+              <button class="product-add" aria-label="Agregar Pizza Hawaiana">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <button class="product-card__fav" aria-label="Agregar a favoritos">♥</button>
+          <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=500&q=80" alt="Pizza Suprema">
+          <div class="product-card__body">
+            <h3>Pizza Suprema</h3>
+            <p>Pepperoni, carne, pimientos, cebolla y aceitunas.</p>
+            <div class="product-card__footer">
+              <span class="product-price">Desde $X.XX</span>
+              <button class="product-add" aria-label="Agregar Pizza Suprema">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <button class="product-card__fav" aria-label="Agregar a favoritos">♥</button>
+          <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=500&q=80" alt="Pizza Cuatro Quesos">
+          <div class="product-card__body">
+            <h3>Pizza Cuatro Quesos</h3>
+            <p>Mezcla de mozzarella, parmesano, provolone y queso azul.</p>
+            <div class="product-card__footer">
+              <span class="product-price">Desde $X.XX</span>
+              <button class="product-add" aria-label="Agregar Pizza Cuatro Quesos">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <button class="product-card__fav" aria-label="Agregar a favoritos">♥</button>
+          <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=500&q=80" alt="Alitas de pollo BBQ">
+          <div class="product-card__body">
+            <h3>Alitas BBQ</h3>
+            <p>Alitas bañadas en salsa BBQ, servidas con aderezo.</p>
+            <div class="product-card__footer">
+              <span class="product-price">Desde $X.XX</span>
+              <button class="product-add" aria-label="Agregar Alitas BBQ">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <button class="product-card__fav" aria-label="Agregar a favoritos">♥</button>
+          <img src="https://images.unsplash.com/photo-1600628421066-f6bda6a7b976?auto=format&fit=crop&w=500&q=80" alt="Pan de ajo con queso">
+          <div class="product-card__body">
+            <h3>Pan de ajo con queso</h3>
+            <p>Pan horneado con mantequilla de ajo y mozzarella gratinada.</p>
+            <div class="product-card__footer">
+              <span class="product-price">Desde $X.XX</span>
+              <button class="product-add" aria-label="Agregar Pan de ajo con queso">+</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTOS DESTACADOS ============ -->
+  <section class="featured" aria-labelledby="featured-title">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="section-eyebrow">Lo que todos están probando</p>
+          <h2 id="featured-title" class="section-title">Los favoritos de la casa</h2>
+        </div>
+      </div>
+
+      <div class="featured__row">
+
+        <article class="featured-card">
+          <img src="https://images.unsplash.com/photo-1548365328-9f547fb0953b?auto=format&fit=crop&w=500&q=80" alt="Pizza Pepperoni extra queso">
+          <h3>Pepperoni extra queso</h3>
+          <span class="product-price">Desde $X.XX</span>
+        </article>
+
+        <article class="featured-card">
+          <img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?auto=format&fit=crop&w=500&q=80" alt="Pizza mexicana con jalapeños">
+          <h3>Mexicana picante</h3>
+          <span class="product-price">Desde $X.XX</span>
+        </article>
+
+        <article class="featured-card">
+          <img src="https://images.unsplash.com/photo-1571066811602-716837d681de?auto=format&fit=crop&w=500&q=80" alt="Pizza vegetariana con vegetales frescos">
+          <h3>Vegetariana fresca</h3>
+          <span class="product-price">Desde $X.XX</span>
+        </article>
+
+        <article class="featured-card">
+          <img src="https://images.unsplash.com/photo-1560781290-7dc94c0f8f4f?auto=format&fit=crop&w=500&q=80" alt="Postre de brownie con chocolate">
+          <h3>Brownie de chocolate</h3>
+          <span class="product-price">Desde $X.XX</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ UBICACIONES ============ -->
+  <section class="locations" id="ubicaciones" aria-labelledby="locations-title">
+    <div class="container locations__grid">
+
+      <div class="locations__copy">
+        <p class="section-eyebrow">Encuéntranos</p>
+        <h2 id="locations-title" class="section-title">Encuentra el Domino's más cercano</h2>
+        <p>Ingresa tu zona o colonia y te mostramos la tienda disponible más cercana para recoger o recibir tu pedido.</p>
+
+        <form class="locations__search" role="search" onsubmit="return false;">
+          <label for="zona" class="sr-only">Buscar por zona</label>
+          <input type="text" id="zona" name="zona" placeholder="Ej. San Salvador, Santa Tecla, Soyapango…">
+          <button type="submit" class="btn btn--primary">Buscar tienda</button>
+        </form>
+
+        <ul class="locations__list">
+          <li><strong>San Salvador Centro</strong><span>Abierto hasta las 10:00 pm</span></li>
+          <li><strong>Santa Tecla</strong><span>Abierto hasta las 10:00 pm</span></li>
+          <li><strong>Soyapango</strong><span>Abierto hasta las 9:00 pm</span></li>
+        </ul>
+      </div>
+
+      <div class="locations__map" role="img" aria-label="Mapa ilustrativo con ubicaciones de tiendas Domino's en El Salvador">
+        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=900&q=80" alt="Mapa ilustrativo de referencia">
+        <span class="map-pin map-pin--1">📍</span>
+        <span class="map-pin map-pin--2">📍</span>
+        <span class="map-pin map-pin--3">📍</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ APP / PEDIDO DIGITAL ============ -->
+  <section class="app" id="app" aria-labelledby="app-title">
+    <div class="container app__grid">
+
+      <div class="app__media">
+        <img src="https://images.unsplash.com/photo-1585237017125-24baf8d7406f?auto=format&fit=crop&w=600&q=80" alt="Persona ordenando pizza desde su teléfono">
+      </div>
+
+      <div class="app__copy">
+        <p class="section-eyebrow">Experiencia digital</p>
+        <h2 id="app-title" class="section-title section-title--light">Pide desde donde estés</h2>
+        <p>Guarda tus direcciones, repite tu último pedido en un toque y sigue tu pizza en tiempo real desde el horno hasta tu puerta.</p>
+
+        <ul class="app__benefits">
+          <li>Seguimiento del pedido en vivo</li>
+          <li>Pedidos guardados y reordenar rápido</li>
+          <li>Promociones exclusivas para la app</li>
+        </ul>
+
+        <div class="app__stores">
+          <a href="#" class="store-badge">
+            <span>Disponible en</span>
+            <strong>App Store</strong>
+          </a>
+          <a href="#" class="store-badge">
+            <span>Disponible en</span>
+            <strong>Google Play</strong>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+
+    <div class="footer__brand">
+      <span class="navbar__logo-text footer__logo">domino's</span>
+      <p>Pizza recién horneada, entregada rápido, en cada rincón de El Salvador.</p>
+      <div class="footer__social" aria-label="Redes sociales">
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="TikTok">TikTok</a>
+        <a href="#" aria-label="X">X</a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h3>Información</h3>
+      <a href="#">Nosotros</a>
+      <a href="#">Trabaja con nosotros</a>
+      <a href="#">Contacto</a>
+    </div>
+
+    <div class="footer__col">
+      <h3>Ayuda</h3>
+      <a href="#">Preguntas frecuentes</a>
+      <a href="#">Términos y condiciones</a>
+      <a href="#">Política de privacidad</a>
+    </div>
+
+    <div class="footer__col">
+      <h3>Pedido</h3>
+      <a href="#menu">Pedir ahora</a>
+      <a href="#ubicaciones">Encontrar restaurante</a>
+      <a href="#promociones">Promociones</a>
+    </div>
+
+  </div>
+
+  <div class="footer__bottom">
+    <p>© 2026 Domino's Pizza El Salvador. Proyecto de rediseño con fines educativos.</p>
+  </div>
+</footer>
+
+<script>
+  // Navegación móvil
+  const navToggle = document.getElementById('navToggle');
+  const navMenu = document.getElementById('navMenu');
+  navToggle.addEventListener('click', () => {
+    const isOpen = navMenu.classList.toggle('is-open');
+    navToggle.classList.toggle('is-open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+  navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('is-open');
+      navToggle.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Navbar con sombra al hacer scroll
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('is-scrolled', window.scrollY > 12);
+  });
+
+  // Pestañas de categorías del menú (visual, sin filtrado real)
+  document.querySelectorAll('.menu__cat').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.menu__cat').forEach(b => {
+        b.classList.remove('is-active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('is-active');
+      btn.setAttribute('aria-selected', 'true');
+    });
+  });
+
+  // Botón "+" agrega al contador del carrito
+  const cartCount = document.querySelector('.navbar__cart-count');
+  let count = 0;
+  document.querySelectorAll('.product-add').forEach(btn => {
+    btn.addEventListener('click', () => {
+      count++;
+      cartCount.textContent = count;
+    });
+  });
+
+  // Favoritos
+  document.querySelectorAll('.product-card__fav').forEach(btn => {
+    btn.addEventListener('click', () => btn.classList.toggle('is-active'));
+  });
+</script>
+
+</body>
+</html>
